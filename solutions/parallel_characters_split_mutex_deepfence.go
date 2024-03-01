@@ -1,4 +1,4 @@
-package main
+package solutions
 
 import (
 	"fmt"
@@ -24,8 +24,8 @@ func worker(finaldata int, wg *sync.WaitGroup, m *sync.Mutex) {
 	m.Unlock()
 }
 
-func main() {
-
+func ParallelCharactersSplitMutexDeepfence() {
+	fmt.Println("Parallel Characters Split Mutex Deepfence")
 	// TODO
 	var wg sync.WaitGroup
 	var m sync.Mutex
@@ -58,7 +58,11 @@ func main() {
 	}
 	wg.Wait()
 	fmt.Println(totalcount, failurecount)
+}
 
+func init() {
+
+	ParallelCharactersSplitMutexDeepfence()
 }
 
 const (

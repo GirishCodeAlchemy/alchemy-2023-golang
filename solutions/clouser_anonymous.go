@@ -1,4 +1,4 @@
-package main
+package solutions
 
 import "fmt"
 
@@ -19,7 +19,7 @@ func intseq() func() int {
 
 }
 
-func main() {
+func init() {
 
 	newseq := intseq()
 	fmt.Println(newseq())

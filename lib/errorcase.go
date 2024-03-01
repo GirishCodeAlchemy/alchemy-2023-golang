@@ -9,6 +9,7 @@ import (
 func sqrt(x float64) (float64, error) {
 	if x < 0 {
 		return 0, errors.New("Math: negative number passed to sort")
+		// return 0, fmt.Errorf("Math: negative number passed to sort: %v", x)
 	}
 	return math.Sqrt(x), nil
 }
