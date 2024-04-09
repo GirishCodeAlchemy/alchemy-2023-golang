@@ -1,7 +1,7 @@
 package main
 
 import (
-	"GoLearning/lib"
+	lib "GoLearning/lib"
 	"fmt"
 )
 
