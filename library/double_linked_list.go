@@ -5,20 +5,11 @@ import (
 	"fmt"
 )
 
-type entry struct {
-	key, value int
-}
-
 func display_double_linked_list(list *list.List) {
 	for e := list.Front(); e != nil; e = e.Next() {
 		fmt.Printf(" %d -> ", e.Value)
 	}
 	fmt.Println()
-
-	// for e := list.Front(); e != nil; e = e.Next() {
-	// 	entry := e.Value.(*entry)
-	// 	fmt.Printf("%d: %d -> ", entry.key, entry.value)
-	// }
 }
 
 func insert_before(value int, mark int, curlist *list.List) *list.Element {
