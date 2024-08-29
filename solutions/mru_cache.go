@@ -1,4 +1,4 @@
-package main
+package solutions
 
 import (
 	"container/list"
@@ -58,7 +58,7 @@ func (c *MRUCache) Display() {
 	fmt.Println() // Move to a new line after printing the list
 }
 
-func main() {
+func init() {
 	cache := NewMRUCache(3)
 	cache.Put(1, 1)
 	cache.Put(2, 2)
