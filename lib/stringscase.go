@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func StingFunction() {
+func StringFunction() {
 	fmt.Println(strings.Contains("seafood", "foo"))
 	fmt.Println(strings.Count("cheese", "e"))
 	fmt.Println(strings.EqualFold("Go", "go"))
@@ -26,4 +26,9 @@ func StingFunction() {
 	fmt.Println(strings.Join(greetings, " "))
 	// fmt.Println(strings.ContainsAny(
 
+}
+
+func init() {
+	fmt.Println("\n******** Sting Functions sample code *********")
+	StringFunction()
 }
