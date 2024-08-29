@@ -30,5 +30,7 @@ func SliceFunctions() {
 }
 
 func init() {
+	fmt.Println("\n******** Slice sample code *********")
+
 	SliceFunctions()
 }
